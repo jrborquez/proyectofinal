@@ -35,7 +35,8 @@ body{
 .producto1{
     display: flex;
     box-sizing: content-box;
-    width: 1200px;
+    max-width: 1248px;
+    max-height: 300px;
     border: 4pt solid aqua;
     flex-wrap: nowrap;
     margin-left: 2%;
@@ -44,6 +45,7 @@ body{
 
 .fotoprod1{
     flex: 1 0 auto;
+    width: 70%;
 }
 
 .parproducto1{
@@ -53,6 +55,7 @@ body{
     padding: 16px;
     color: white;
     flex: 1 0 100%;
+    width: 30%;
 }
 
 #cards{
