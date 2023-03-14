@@ -7,6 +7,8 @@ font-family: 'Raleway', sans-serif;*/
 
 .hero{
     box-sizing: border-box;
+    width: 100%;
+    height: 100%;
     border: 4pt solid;
     color: aqua;
 }
@@ -34,33 +36,49 @@ body{
 
 .producto1{
     display: flex;
-    box-sizing: content-box;
+    box-sizing: border-box;
     max-width: 1248px;
     max-height: 300px;
-    border: 4pt solid aqua;
     flex-wrap: nowrap;
+    border: 4pt solid aqua;
     margin-left: 2%;
     margin-right: 2%;
 }
 
 .fotoprod1{
-    flex: 1 0 auto;
-    width: 70%;
+    display: flex;
+    box-sizing: border-box;
+    max-width: 760px;
+    border: 4pt solid red;
 }
 
 .parproducto1{
+    display: flex;
     box-sizing: border-box;
+    max-width: 478px;
+    height: 1 0 100%;
     background-color: rgb(76, 121, 163);
-    text-align: center;
+    border: 4pt solid aqua;
     padding: 16px;
-    color: white;
+}
+.boxprod1{
     flex: 1 0 100%;
-    width: 30%;
+    color: white;
+    text-align: center;
+}
+@media (max-width:994px) {
+    .producto1 {
+        flex-direction: column;
+        flex-wrap: wrap;
+         }
+    .fotoprod1{
+        width: 100%;
+    }
+    .boxprod1{
+        flex-wrap: wrap;
+    }
 }
 
-#cards{
-    display: grid;
-}
 
 /*Media Query*/
 
