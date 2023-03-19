@@ -4,6 +4,18 @@
 /*como añadir las fuentes importadas
 font-family: 'Playfair Display', serif;
 font-family: 'Raleway', sans-serif;*/
+html {box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 20px;
+    box-sizing: border-box;
+    max-width: 1300px;
+    align-items: center;
+}
 
 .hero{
     box-sizing: border-box;
@@ -27,57 +39,31 @@ font-family: 'Raleway', sans-serif;*/
     font-weight: 700;
 }
 
-body{
-    margin: 20px;
-    box-sizing: border-box;
-    max-width: 1300px;
-    align-items: center;
-}
-
-.producto1{
+.contenedor1{
     display: flex;
-    box-sizing: border-box;
-    max-width: 1248px;
-    max-height: 300px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    max-width: 100%;
     border: 4pt solid aqua;
     margin-left: 2%;
     margin-right: 2%;
 }
-
-.fotoprod1{
+.foto1{
     display: flex;
-    box-sizing: border-box;
-    max-width: 760px;
+    max-width: 60%;
     border: 4pt solid red;
 }
-
-.parproducto1{
-    display: flex;
-    box-sizing: border-box;
-    max-width: 478px;
-    height: 1 0 100%;
+.fotosub{
+    flex: auto;
+}
+.texto1{
+    flex: 1 0 40%;
     background-color: rgb(76, 121, 163);
-    border: 4pt solid aqua;
-    padding: 16px;
-}
-.boxprod1{
-    flex: 1 0 100%;
-    color: white;
     text-align: center;
+    padding: 16px;
+    color: aliceblue;
+    border-radius: 1%;
 }
-@media (max-width:994px) {
-    .producto1 {
-        flex-direction: column;
-        flex-wrap: wrap;
-         }
-    .fotoprod1{
-        width: 100%;
-    }
-    .boxprod1{
-        flex-wrap: wrap;
-    }
-}
+
 
 
 /*Media Query*/
