@@ -15,6 +15,9 @@ html {box-sizing: border-box;
 body{
     max-width: 1450px;
     margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    line-height: 2
 }
 
 
@@ -28,9 +31,7 @@ h2{
 h3{
     font-size: 4rem;
 }
-font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    line-height: 2
+
 */
 .hero{
     width: 100%;
@@ -60,6 +61,7 @@ font-family: 'Raleway', sans-serif;
     display: flex;
     max-width: 60%;
 }
+
 .texto1{
     flex: 1 0 40%;
     background-color: rgb(76, 121, 163);
@@ -149,8 +151,24 @@ font-family: 'Raleway', sans-serif;
 .botones h3{
     color: rgb(76, 121, 163);
 }
+.lsfooter{
+    flex: 1fr;
+    width: 30%;
+}
 
 /*Media Query*/
+@media (max-width:850px){
+
+.contenedor1{
+    flex-direction: column;
+}
+.foto1{
+    max-width: 100%;
+}
+.lsfooter{
+    width: 100%;
+}
+}
 
 /** Reescribir colores */
 
