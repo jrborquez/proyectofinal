@@ -25,16 +25,45 @@ h1{
     font-size: 4rem;
 }
 
-.hero{
+.hero-image img{
+    background-image: url(principal.jpg);
     width: 100%;
-    /*height: 100%;*/
-}
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
 
-.navflex{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content:space-evenly;
+    .navflex{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content:space-evenly;
 }
 
 .fuente1{
@@ -75,14 +104,14 @@ h1{
     display: grid;
     width: 92%;
     margin: 0% 4% 0% 4%;
-    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
     gap: 10px;
 }
 .grid2{
     display: grid;
     width: 92%;
     margin: 0% 4% 0% 4%;
-    grid-template-columns: repeat(auto-fit, minmax(283px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(210px,1fr));
     grid-template-rows: auto;
     gap: 10px;
 }
@@ -90,13 +119,13 @@ h1{
 .contenedornav{
     width: 100%;
     margin: 0 auto;
+    justify-content: center;
 }
 
 #navfinal{
     display: flex;
-    max-width: 100%;
+    max-width: 96%;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: space-evenly;
 }
 
@@ -112,15 +141,21 @@ h1{
 .botones a:visited{
     color: gray;
 }
+/* Se realizó una transición al hover 
+para que este sea mas suave y se 
+tenga una experiencia mas confortable 
+y agradable */
 .botones a:hover{
     color: gainsboro;
+    transition: 0.3s;
 }
 .botones h3{
     color: rgb(76, 121, 163);
 }
 .lsfooter{
-    flex: 1 0 16rem;
+    flex: 1 0 14rem;
     text-align: center;
+    justify-content: center;
 }
 
 
